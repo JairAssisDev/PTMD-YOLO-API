@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 
 # Load model at startup
 try:
-    model = YOLO("models/best.pt")
+    model = YOLO("models/ptmdNA.pt")
 except Exception as e:
     logger.error(f"Failed to load YOLO model: {e}")
     raise
