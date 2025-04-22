@@ -5,7 +5,6 @@ from controller.controller_predict import router as routes_predict
 
 app = FastAPI()
 
-# CORS configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -14,7 +13,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include your routers
 app.include_router(routes_predict)
 
 if __name__ == "__main__":
